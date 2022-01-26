@@ -6,7 +6,7 @@ import AuthNavigator from './authStack';
 import InternalNavigator from './internalStack';
 
 const AppNavigator = ({userData}) => {
-  let isLoggedIn = true;
+  let isLoggedIn = false;
 
   if (userData && userData.access_token) {
     isLoggedIn = true;
