@@ -17,7 +17,6 @@ const getSearchData = async query => {
     return res;
   } catch (err) {
     // Error Handling
-    // console.warn({err});
   }
 };
 

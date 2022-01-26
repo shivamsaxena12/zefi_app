@@ -5,7 +5,6 @@ import interceptErrors from './interceptErrors';
 /** -------------------Initiate axios instance--------------------------- **/
 
 const configureAxios = () => {
-  console.warn('INITIATE AXIOS');
   return axios.create({
     timeout: 10000,
     // withCredentials: false,
@@ -18,7 +17,7 @@ export const axiosInstance = configureAxios();
 /** -------------------Request Intercepertor--------------------------- **/
 
 axiosInstance.interceptors.request.use(async config => {
-  console.log('Request config==>', config);
+  // console.log('Request config==>', config);
 
   // ADD ACCESS TOKEN TO THE REQUEST HERE
   return config;
