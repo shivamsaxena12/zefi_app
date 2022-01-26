@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    maxHeight: 40,
+    maxHeight: 36,
     borderRadius: 3,
   },
   searchInput: {

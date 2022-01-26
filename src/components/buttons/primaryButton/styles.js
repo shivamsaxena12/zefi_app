@@ -1,11 +1,12 @@
 import {StyleSheet} from 'react-native';
+import colors from '../../../config/colors';
 
 export const styles = StyleSheet.create({
   containerStyle: {
     paddingVertical: 12,
     width: '100%',
     borderRadius: 10,
-    backgroundColor: '#3f51b5',
+    backgroundColor: colors.themeBlue,
     maxWidth: 240,
     justifyContent: 'center',
   },

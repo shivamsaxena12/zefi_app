@@ -4,14 +4,17 @@ import SearchBar from '../SearchBar';
 
 import {styles} from './styles';
 
-const Header = ({style}) => {
+const Header = ({style, searchQuery, setSearchQuery}) => {
   return (
     <View style={[styles.containerStyle, style]}>
       <View style={styles.logoContainer}>
-        <Image source={require('../../assets/icons/youtube.png')} />
+        <Image
+          style={styles.logoIcon}
+          source={require('../../assets/icons/youtube.png')}
+        />
       </View>
 
-      <SearchBar />
+      <SearchBar value={searchQuery} setValue={setSearchQuery} />
 
       <View style={styles.menuContainer}>
         <Image

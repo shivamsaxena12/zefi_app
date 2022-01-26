@@ -16,8 +16,13 @@ export const styles = StyleSheet.create({
     paddingRight: 8,
     marginRight: 8,
   },
+  logoIcon: {
+    width: 30,
+    height: 30,
+    resizeMode: 'contain',
+  },
   menuContainer: {
-    paddingHorizontal: 16,
+    paddingHorizontal: 12,
     marginLeft: 8,
   },
   dotsIcon: {

@@ -3,8 +3,8 @@ import colors from './colors';
 import fonts from './fonts';
 
 const largeText = 24;
-const mediumText = 14;
-const smallText = 12;
+const mediumText = 16;
+const smallText = 13;
 
 const regularText = fonts.openSansRegular;
 const semiboldText = fonts.openSansSemibold;
@@ -19,14 +19,17 @@ const textStyles = StyleSheet.create({
   largeTextSemibold: {
     fontFamily: semiboldText,
     fontSize: largeText,
+    color: colors.textDefault,
   },
   mediumText: {
     fontFamily: regularText,
     fontSize: mediumText,
+    color: colors.textDefault,
   },
   mediumTextSemibold: {
     fontFamily: semiboldText,
     fontSize: mediumText,
+    color: colors.textDefault,
   },
   smallText: {
     fontFamily: regularText,

@@ -20,21 +20,8 @@ const logoutWithMagic = async () => {
   await magic.user.logout();
 };
 
-const checkUser = async callback => {
-  const magic = configureMagicInstance.getMagicInstance();
-
-  const isLoggedIn = await magic.user.isLoggedIn();
-  if (isLoggedIn) {
-    const user = await magic.user.getMetadata();
-    return callback({isLoggedIn: true, email: user.email});
-  }
-
-  return callback({isLoggedIn: false});
-};
-
 const AuthService = {
   loginWithMagic,
-  checkUser,
   logoutWithMagic,
 };
 

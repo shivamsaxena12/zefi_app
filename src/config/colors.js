@@ -14,6 +14,8 @@ const colors = {
 
   gray1: '#9c9c9c',
 
+  themeBlue: '#3f51b5',
+
   // Text Colors
   textDefault: '#333340',
 };

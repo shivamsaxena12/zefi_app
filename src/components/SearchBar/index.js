@@ -3,10 +3,14 @@ import {Image, TextInput, TouchableOpacity, View} from 'react-native';
 
 import {styles} from './styles';
 
-const SearchBar = ({style}) => {
+const SearchBar = ({style, value, setValue}) => {
   return (
     <View style={[styles.containerStyle, style]}>
-      <TextInput style={styles.searchInput} />
+      <TextInput
+        value={value}
+        onChangeText={setValue}
+        style={styles.searchInput}
+      />
 
       <TouchableOpacity
         onPress={() => {}}

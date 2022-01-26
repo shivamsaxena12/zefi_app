@@ -25,10 +25,8 @@ const LoginScreen = ({setUserDataAction}) => {
       const userData = {
         access_token: loginToken,
       };
-      console.log(userData);
       setUserDataAction(userData);
     } catch (err) {
-      console.warn(err);
       setIsLoading(false);
       // Error handling
     }
