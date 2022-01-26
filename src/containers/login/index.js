@@ -48,7 +48,7 @@ const LoginScreen = ({setUserDataAction}) => {
       <PrimaryButton
         isLoading={isLoading}
         onPress={onSendMagicLink}
-        text="Continue"
+        text="CONTINUE"
       />
     </View>
   );
